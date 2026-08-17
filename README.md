@@ -1,16 +1,26 @@
-# React + Vite
+# 🧍 Posture Checker
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplikasi web pendeteksi dan penganalisis postur tubuh secara *real-time* langsung di browser Anda menggunakan AI.
 
-Currently, two official plugins are available:
+## 📝 Deskripsi Proyek
+Proyek ini adalah sebuah aplikasi web yang dirancang untuk mendeteksi dan menganalisis postur tubuh penggunanya (misalnya mengecek postur duduk saat *coding* atau bekerja) secara *real-time* melalui kamera perangkat menggunakan teknologi kecerdasan buatan (AI). Aplikasi ini berjalan sepenuhnya di sisi klien (browser) untuk menjaga privasi pengguna.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Teknologi & Library Utama
+*   **[React (v19)](https://react.dev/):** Digunakan sebagai *library* utama untuk membangun antarmuka pengguna (UI) aplikasi webnya.
+*   **[Vite (v8)](https://vitejs.dev/):** Digunakan sebagai *build tool* dan *development server* yang membuat proses *development* menjadi sangat cepat.
+*   **[TensorFlow.js](https://www.tensorflow.org/js):** *Library machine learning* dari Google yang memungkinkan model AI dijalankan langsung di dalam browser pengguna dengan bantuan akselerasi kartu grafis (WebGL).
+*   **[Pose Detection](https://github.com/tensorflow/tfjs-models/tree/master/pose-detection):** Model AI *pre-trained* (siap pakai) dari TensorFlow yang berfungsi spesifik untuk mendeteksi titik-titik persendian dan bagian tubuh manusia secara *real-time* dari tangkapan kamera.
+*   **[Oxlint](https://oxc-project.github.io/docs/guide/usage/linter.html):** *Linter* super cepat (berbasis Rust) yang digunakan untuk mengecek dan menjaga kualitas kode JavaScript/TypeScript.
 
-## React Compiler
+## 🛠️ Cara Menjalankan Proyek (Local Development)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+1. Pastikan Anda sudah menginstal **Node.js**.
+2. Buka terminal di direktori proyek ini, lalu jalankan instalasi dependensi:
+   ```bash
+   npm install
+   ```
+3. Jalankan *development server*:
+   ```bash
+   npm run dev
+   ```
+4. Buka tautan yang muncul di terminal (biasanya `http://localhost:5173`) pada browser Anda.
